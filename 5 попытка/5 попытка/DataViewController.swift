@@ -9,6 +9,12 @@
 import UIKit
 
 class DataViewController: UIViewController {
+    
+    struct KeyDefaults {
+        static let keyname = "name"
+        static let keytime = "time"
+    }
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var Medname: UILabel!
     var newText3: String?
@@ -33,7 +39,10 @@ class DataViewController: UIViewController {
         Medname.sizeToFit()
         
         
+        
+        
     }
+   
     @objc func doneAction(){
         view.endEditing(true)
     }
@@ -49,6 +58,15 @@ class DataViewController: UIViewController {
         formatter.dateFormat = "dd.MM.yyyy HH:mm"
         dateField.text = formatter.string(from: datePicked.date)
     }
+    @IBAction func saveAction(_ sender: Any) {
+        let name  = Medname.text!
+        let time  = dateField.text!
+        
+        if !name.isEmpty && !time.isEmpty{
+            Base.shared.saveSave(name: name, time: time)
+            self.navigationController?.popViewController(animated: true )
+        }
+       }
 
     /*
     // MARK: - Navigation
