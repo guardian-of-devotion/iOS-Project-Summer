@@ -7,8 +7,13 @@
 //
 
 import Foundation
+
  struct User {
-     
+    var users = [User]()
      let nameofMedicament: String
      let Howuneeddrinkpreporats : String
- }
+    var userFiltered = [User]()
+}
+
+ 
+
