@@ -60,8 +60,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="w5G-cC-Flw" kind="relationship" relationship="viewControllers" id="vOg-pa-fC9"/>
@@ -84,6 +82,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-UN-FRb">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1R-0o-4af">
+                                        <rect key="frame" x="105" y="42" width="192" height="118"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Снимок экрана 2020-07-17 в 7.32.46 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="9y5-YR-jYC">
+                                                <rect key="frame" x="32" y="8.5" width="128" height="128"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9y5-YR-jYC" firstAttribute="centerX" secondItem="x1R-0o-4af" secondAttribute="centerX" constant="11" id="6bC-tu-5a1"/>
+                                            <constraint firstAttribute="bottom" secondItem="9y5-YR-jYC" secondAttribute="bottom" constant="-19" id="Fm9-0g-uy8"/>
+                                            <constraint firstItem="9y5-YR-jYC" firstAttribute="top" secondItem="x1R-0o-4af" secondAttribute="top" constant="8" id="Frw-bJ-5uA"/>
+                                            <constraint firstItem="9y5-YR-jYC" firstAttribute="leading" secondItem="x1R-0o-4af" secondAttribute="leading" constant="43" id="wSk-vb-s9R"/>
+                                        </constraints>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-GB-iX8">
                                         <rect key="frame" x="43" y="308" width="312" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -132,7 +146,7 @@
                                             <segment title="MALE"/>
                                             <segment title="FEMALE"/>
                                         </segments>
-                                        <color key="selectedSegmentTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="selectedSegmentTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </segmentedControl>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jhx-gs-nKV">
                                         <rect key="frame" x="43" y="239" width="315" height="34"/>
@@ -169,36 +183,19 @@
                                             <action selector="saveActoin:" destination="w5G-cC-Flw" eventType="touchUpInside" id="3xT-A6-qof"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1R-0o-4af">
-                                        <rect key="frame" x="111" y="40" width="192" height="118"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Снимок экрана 2020-07-17 в 7.32.46 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="9y5-YR-jYC">
-                                                <rect key="frame" x="32" y="8.5" width="128" height="128"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="9y5-YR-jYC" firstAttribute="centerX" secondItem="x1R-0o-4af" secondAttribute="centerX" id="6bC-tu-5a1"/>
-                                            <constraint firstAttribute="bottom" secondItem="9y5-YR-jYC" secondAttribute="bottom" constant="-19" id="Fm9-0g-uy8"/>
-                                            <constraint firstItem="9y5-YR-jYC" firstAttribute="top" secondItem="x1R-0o-4af" secondAttribute="top" constant="8" id="Frw-bJ-5uA"/>
-                                            <constraint firstItem="9y5-YR-jYC" firstAttribute="leading" secondItem="x1R-0o-4af" secondAttribute="leading" constant="32" id="wSk-vb-s9R"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="9LU-Y7-EJy" firstAttribute="top" secondItem="yTm-UN-FRb" secondAttribute="topMargin" id="0AF-IG-QUy"/>
                                     <constraint firstItem="xbP-BE-PQX" firstAttribute="leading" secondItem="9LU-Y7-EJy" secondAttribute="trailing" constant="8" id="1Uc-Ny-TEY"/>
-                                    <constraint firstAttribute="trailing" secondItem="x1R-0o-4af" secondAttribute="trailing" constant="111" id="3dt-Vn-4l6"/>
+                                    <constraint firstAttribute="trailing" secondItem="x1R-0o-4af" secondAttribute="trailing" constant="117" id="3dt-Vn-4l6"/>
                                     <constraint firstItem="5MK-d7-W29" firstAttribute="top" secondItem="gGj-iD-7IH" secondAttribute="bottom" constant="32" id="5zt-20-gaJ"/>
                                     <constraint firstItem="WmQ-3F-zLf" firstAttribute="top" secondItem="yTm-UN-FRb" secondAttribute="top" constant="198" id="A6s-Gc-0Dk"/>
                                     <constraint firstAttribute="trailing" secondItem="WmQ-3F-zLf" secondAttribute="trailing" constant="72" id="E3R-Cx-hbk"/>
                                     <constraint firstItem="WmQ-3F-zLf" firstAttribute="trailing" secondItem="jhx-gs-nKV" secondAttribute="trailing" constant="-16" id="Ge9-KT-fzs"/>
                                     <constraint firstItem="BUa-Z6-v29" firstAttribute="top" secondItem="c4s-q1-dvh" secondAttribute="bottom" constant="8" id="HFT-tp-aDq"/>
                                     <constraint firstItem="9LU-Y7-EJy" firstAttribute="centerX" secondItem="yTm-UN-FRb" secondAttribute="centerX" id="Jeo-rn-B4R"/>
-                                    <constraint firstItem="WmQ-3F-zLf" firstAttribute="top" secondItem="x1R-0o-4af" secondAttribute="bottom" constant="40" id="K30-T1-qcX"/>
+                                    <constraint firstItem="WmQ-3F-zLf" firstAttribute="top" secondItem="x1R-0o-4af" secondAttribute="bottom" constant="38" id="K30-T1-qcX"/>
                                     <constraint firstItem="gGj-iD-7IH" firstAttribute="leading" secondItem="5MK-d7-W29" secondAttribute="leading" id="KRe-8d-8H7"/>
                                     <constraint firstItem="gGj-iD-7IH" firstAttribute="top" secondItem="jhx-gs-nKV" secondAttribute="bottom" constant="66" id="PFN-Gq-VeA"/>
                                     <constraint firstItem="WmQ-3F-zLf" firstAttribute="leading" secondItem="jhx-gs-nKV" secondAttribute="leading" id="Q7R-GI-TkN"/>
@@ -212,8 +209,8 @@
                                     <constraint firstItem="5MK-d7-W29" firstAttribute="top" secondItem="aAs-GB-iX8" secondAttribute="bottom" constant="56" id="ae7-6s-c6a"/>
                                     <constraint firstItem="5MK-d7-W29" firstAttribute="trailing" secondItem="c4s-q1-dvh" secondAttribute="trailing" id="bYG-YV-ZUo"/>
                                     <constraint firstAttribute="trailing" secondItem="Nnn-oZ-Nis" secondAttribute="trailing" constant="78" id="c8a-Cf-VcU"/>
-                                    <constraint firstItem="x1R-0o-4af" firstAttribute="leading" secondItem="yTm-UN-FRb" secondAttribute="leading" constant="111" id="cW2-cN-m53"/>
-                                    <constraint firstItem="x1R-0o-4af" firstAttribute="top" secondItem="yTm-UN-FRb" secondAttribute="top" constant="40" id="gfK-Fq-UVK"/>
+                                    <constraint firstItem="x1R-0o-4af" firstAttribute="leading" secondItem="yTm-UN-FRb" secondAttribute="leading" constant="105" id="cW2-cN-m53"/>
+                                    <constraint firstItem="x1R-0o-4af" firstAttribute="top" secondItem="yTm-UN-FRb" secondAttribute="top" constant="42" id="gfK-Fq-UVK"/>
                                     <constraint firstItem="c4s-q1-dvh" firstAttribute="top" secondItem="pnR-IE-DJT" secondAttribute="bottom" constant="38" id="h7j-Kv-9y6"/>
                                     <constraint firstItem="WmQ-3F-zLf" firstAttribute="leading" secondItem="yTm-UN-FRb" secondAttribute="leading" constant="43" id="iaI-Bx-e3l"/>
                                     <constraint firstItem="BUa-Z6-v29" firstAttribute="top" secondItem="Nnn-oZ-Nis" secondAttribute="top" id="nLU-bA-0Yt"/>
@@ -236,9 +233,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kPi-jz-9Lo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="GC8-4O-bBI">
-                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="GC8-4O-bBI"/>
                     <connections>
                         <outlet property="Age" destination="BUa-Z6-v29" id="nNZ-GH-ff2"/>
                         <outlet property="Height" destination="pnR-IE-DJT" id="cWC-fh-9rC"/>
@@ -259,8 +254,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" red="1" green="0.056636481170000003" blue="0.098486366539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" red="1" green="0.056636481170000003" blue="0.098486366539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="iMy-As-0zu" detailTextLabel="XpT-CE-JSf" rowHeight="48" style="IBUITableViewCellStyleSubtitle" id="T2h-99-zF3">
                                 <rect key="frame" x="0.0" y="28" width="414" height="48"/>
@@ -284,7 +279,6 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -322,7 +316,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ti7-09-ddw">
                                 <rect key="frame" x="20" y="136" width="374" height="677"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -430,9 +424,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xv4-Wf-Wmb"/>
+        <segue reference="AWh-Af-vcz"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
