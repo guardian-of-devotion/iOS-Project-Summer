@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841BE6C824C22F1B00FC077A /* Снимок экрана 2020-07-17 в 7.32.46 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 841BE6C724C22F1B00FC077A /* Снимок экрана 2020-07-17 в 7.32.46 AM.png */; };
 		D10D27CA24BCC37F005B486F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D27C924BCC37F005B486F /* TableViewController.swift */; };
 		D10D27D024BCCCF2005B486F /* DetaillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10D27CF24BCCCF2005B486F /* DetaillViewController.swift */; };
 		D12ED00424C0A42D00870613 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12ED00324C0A42D00870613 /* SaveViewController.swift */; };
@@ -27,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		841BE6C724C22F1B00FC077A /* Снимок экрана 2020-07-17 в 7.32.46 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Снимок экрана 2020-07-17 в 7.32.46 AM.png"; path = "../../../../Desktop/Снимок экрана 2020-07-17 в 7.32.46 AM.png"; sourceTree = "<group>"; };
 		D10D27C924BCC37F005B486F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D10D27CF24BCCCF2005B486F /* DetaillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaillViewController.swift; sourceTree = "<group>"; };
 		D12ED00324C0A42D00870613 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				D10D27C924BCC37F005B486F /* TableViewController.swift */,
 				D15C742924BC593300C1BF01 /* User.swift */,
 				D15321E924B90F4A007DBD7F /* Assets.xcassets */,
-				841BE6C724C22F1B00FC077A /* Снимок экрана 2020-07-17 в 7.32.46 AM.png */,
 				D15321EB24B90F4A007DBD7F /* LaunchScreen.storyboard */,
 				D15321EE24B90F4A007DBD7F /* Info.plist */,
 			);
@@ -167,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D15321ED24B90F4A007DBD7F /* LaunchScreen.storyboard in Resources */,
-				841BE6C824C22F1B00FC077A /* Снимок экрана 2020-07-17 в 7.32.46 AM.png in Resources */,
 				D15321EA24B90F4A007DBD7F /* Assets.xcassets in Resources */,
 				D15321E824B90F48007DBD7F /* Main.storyboard in Resources */,
 			);
